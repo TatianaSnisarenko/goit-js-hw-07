@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: Montserrat, sans-serif;
+}
+
+/* #region reset */
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 0;
+  padding: 8px 16px;
+  gap: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+input {
+  border: 1px solid #808080;
+  outline: transparent;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+/* Для Chrome, Safari та Edge */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* #endregion */
+
+/* #region task 1 */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 8px;
+  background: #fff;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+#categories > .item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  width: 100%;
+}
+
+#categories > .item > h2 {
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+#categories > .item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#categories > .item > ul > li {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 16px;
+}
+
+/* #endregion */
+
+/* #region task 2 */
+
+.gallery {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  padding: 100px 156px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+  display: flex;
+  justify-content: center;
+}
+
+/* #endregion */
+
+/* #region task 3 */
+
+/* consider adding wrapper and classes into html */
+
+#name-input {
+  margin: 24px;
+  margin-bottom: 16px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+body > h1 {
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.04em;
+  margin: 24px;
+  margin-top: 0;
+}
+
+/* #endregion */
+
+/* #region task 4 */
+
+.login-form {
+  padding: 24px;
+  width: 408px;
+  margin: 0 auto;
+}
+
+.login-form > label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.login-form > label:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+}
+
+.login-form > label > input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+/* #endregion */
+
+/* #region task 5 */
+
+.widget {
+  width: 345px;
+  margin: 0 auto;
+  display: flex;
+  padding: 100px 88px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.widget > p {
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region task 6 */
+
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 486px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin: 24px auto;
+  margin-bottom: 16px;
+}
+
+#controls > input {
+  padding: 8px 72px;
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#controls > button {
+  width: 120px;
+}
+
+#controls > button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#controls > button[data-destroy]:hover {
+  background: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  gap: 44px;
+  padding: 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 490px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin: 24px auto;
+  margin-top: 0;
+}
+
+/* #endregion */
